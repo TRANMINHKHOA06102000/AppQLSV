@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FAF8E5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UpdateActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/botron3"
+
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/khungtimkiem"
+            android:id="@+id/imageviewThem"
+            android:src="@drawable/icon_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+       <TextView
+           android:layout_marginLeft="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:textSize="16sp"
+           android:textColor="#fff"
+           android:text="SỬA THÔNG TIN SINH VIÊN"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/avatar"
+            android:id="@+id/imageHinhDaiDien"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="#2196F3"
+                android:drawableLeft="@drawable/addimage"
+                android:id="@+id/buttonChonHinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chọn Hình"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="#2196F3"
+                android:drawableLeft="@drawable/camera"
+                android:id="@+id/buttonChupHinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chụp Hình"/>
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="40dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <EditText
+           android:id="@+id/edittextTen"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Tên:"/>
+       <EditText
+           android:id="@+id/edittextSdt"
+           android:hint="Số điện thoại:"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:drawableLeft="@drawable/ic_save"
+            android:drawableTint="#9C27B0"
+            android:text="Lưu"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:drawableTint="#F44336"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="#FFEB3B"
+            android:drawableLeft="@drawable/ic_cancel"
+            android:layout_weight="1"
+            android:id="@+id/buttonHuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy">
+
+        </Button>
+    </LinearLayout>
+    
+</LinearLayout>
